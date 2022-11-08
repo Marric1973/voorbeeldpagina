@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Tandartpraktijk Kieskeurig</title>
+    <meta name="description" content="Tandartpraktijk Kieskeurig plan afspraak">
+</head>
+
+<body>
+    <h1>Tandartsafspraak</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis tortor et nulla molestie scelerisque eget vitae
+        neque. Duis fringilla rhoncus purus ut maximus. In pellentesque, augue non aliquam porttitor, sapien nunc
+        elementum leo, vel congue nunc est vitae metus. Donec egestas dictum libero, et eleifend nibh aliquam eu.
+        Cras blandit gravida dui, in tincidunt velit finibus et. Etiam libero dolor, tempus ut mollis vel, interdum quis
+        erat. Duis feugiat accumsan justo, nec accumsan erat fermentum quis. Quisque sagittis risus non risus malesuada,
+        vel pharetra dui cursus.
+    </p>
+    <figure>
+        <img src="afbeeldingen/tandarts1.jpg" alt="onze tandartspraktijk" title="tandartspraktijk foto 1" width="300">
+        <img src="afbeeldingen/tandarts2.jpg" alt="onze tandartspraktijk" title="tandartspraktijk foto 2" width="300">
+        <img src="afbeeldingen/tandarts3.jpg" alt="onze tandartspraktijk" title="tandartspraktijk foto 3" width="300">
+        <figcaption><em>Onze tandartspraktijk</em></figcaption>
+    </figure>
+    <br>
+    <h2>Plan een afspraak</h2>
+    <form id="afspraakform" action="https://formspree.io/mzbwabqb" method="post">
+        <fieldset>
+            <legend>Persoonlijke gegevens</legend>
+            <label for="naam">Naam:</label>
+            <input type="text" id="naam" name="naam"><br><br>
+            <input type="radio" name="geslacht" value="man" checked>Man
+            <input type="radio" name="geslacht" value="vrouw">Vrouw
+            <input type="radio" name="geslacht" value="anders">Anders<br><br>
+            <label for="geboortedatum">Geboortedatum</label>
+            <input type="date" id="geboortedatum" name="geboortedatum" max="2080-12-31"><br><br>
+            <label for="adres">Adres:</label>
+            <input type="text" id="adres" name="adres"><br><br>
+            <label for="postcode">Postcode:</label>
+            <input type="text" id="postcode" name="postcode"><br><br>
+            <label for="woonplaats">Woonplaats:</label>
+            <input type="text" id="woonplaats" name="woonplaats"><br><br>
+            <label for="telefoonnr">Telefoonnummer:</label>
+            <input type="tel" id="telefoonnr" name="telefoonnr"><br><br>
+        </fieldset><br>
+        <fieldset>
+            <legend>Beschrijving van de klachten</legend>
+            <b> Locatie van de klachten</b><br>
+            <input type="checkbox" name="pijnlocatie" value="lb">Tand linksboven
+            <input type="checkbox" name="pijnlocatie" value="rb">Tand rechtsboven<br>
+            <input type="checkbox" name="pijnlocatie" value="lo">Tand linksonder
+            <input type="checkbox" name="pijnlocatie" value="ro">Tand rechtsonder<br><br>
+            <b>Indien mogelijk, stuur een foto mee</b><br>
+            <input type="file" name="bestand" accept="image/png, image/jpeg">
+        </fieldset><br>
+        <fieldset>
+            <legend>Toelichting van de klachten</legend>
+            <label for="toelichting"><b>Licht uw klacht zo duidelijk mogelijk toe</b></label><br>
+            <textarea id="toelichting" name="toelichting" maxlength="1500" rows="5" cols="50"></textarea><br><br>
+            <b>Selecteer datum voor afspraak</b><br>
+            <input type="date" name="afspraakdatum" max="2080-12-31"><br><br>
+        </fieldset><br>
+        <input type="submit" value="Verzend">
+    </form>
+    <br>
+</body>
+
+</html>
